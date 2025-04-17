@@ -25,7 +25,7 @@ if __name__ == "__main__":
   for i in range(1, n+1):
     c[i] = [0] + list(map(int, input().split()))
   for i in range(1, n+1):
-    visited = 0
+    visited[i] = 0
   print("Enter the starting vertex: ")
   v = int(input())
   print("BFS traversal of the graph is: ", end="")
