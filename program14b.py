@@ -3,7 +3,7 @@ def warshalls(c, n):
     for i in range(n):
       for j in range(n):
         if c[i][j] or (c[i][k] and c[k][j]):
-          c[i]][j] = 1
+          c[i][j] = 1
 
   print("The transitive closure of the graph is: ")
   for i in range(n):
