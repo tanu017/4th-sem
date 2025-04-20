@@ -6,8 +6,9 @@ def sum_of_subsets(s, k, r):
     for i in range(k + 1):
       if x[i]:
         print("%d " %w[i], end="")
-
   elif s + w[k] + w[k+1] <= d:
+    sum_of_subsets(s + w[k], k+1, r - w[k])
+  if s + r - w[k] >= d and s + w[k+1] <=d:
     x[k] = 0
     sum_of_subsets(s, k+1, r-w[k])
 
